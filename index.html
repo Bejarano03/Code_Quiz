@@ -3,60 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <title>Code Quiz</title>
+    <title>Code Quiz Challenge</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css" />
   </head>
   <body>
     <div class="container">
-        <div id="home" class="flex-column flex-center">
-            <h1></h1>
-            <a href="" class="">Start!</a>
-            <!-- <a href="" id="" class="">High Scores<i class="fas fa-crown"></i></a>  -->
-        </div>
-    </div>
+      <div id="startpage">
+        <h2>This quiz will test your knowledge</h2>
+        <h2>on various Spanish words</h2>
+        <button id="startbtn">Start Code Quiz</button>
+        <button id="startPageHighscore" onclick="showHighscore()">
+          High Scores
+        </button>
+      </div>
 
-    <div class="questions">
-        <div id="game" class="justify-center flex-column">
-            <div id="hud">
-                <div id="app"></div> 
-                <div class="hud-item">
-                    <p id="progressText" class="hud-prefix">
-                        Question
-                    </p>
-                    <div id="progressBar">
-                        <div id="progressBarFull"></div>
-                    </div>
-                </div>
-                <div class="hud-item">
-                    <p class="hud-prefix">
-                        Score
-                    </p>
-                    <h1 class="hud-main-text" id="score">
-                        0
-                    </h1>
-                </div>
-            </div>
-            <h2 id="question">What is the answer to this question</h2>
-            <div class="choice-container">
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">Choice</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">B</p>
-                <p class="choice-text" data-number="2">Choice 2</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">C</p>
-                <p class="choice-text" data-number="3">Choice 3</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">D</p>
-                <p class="choice-text" data-number="4">Choice 4</p>
-            </div>
+      <div id="quiz">
+        <div id="timer">Time left:</div>
+        <div id="questions"><p>Questions Placeholder</p></div>
+        <button id="a" onclick="checkAnswer('a')">A</button>
+        <button id="b" onclick="checkAnswer('b')">B</button>
+        <button id="c" onclick="checkAnswer('c')">C</button>
+        <button id="d" onclick="checkAnswer('d')">D</button>
+        <div id="result"></div>
+      </div>
+      <div id="gameover">
+        <div id="finalScore"></div>
+        <input
+          type="text"
+          size="40"
+          placeholder="Enter you initials for high score"
+          name="intials"
+          id="initials"
+        />
+        <button id="submitScore">Submit Score</button>
+      </div>
+      <div id="highscoreContainer">
+        <div id="high-scorePage">
+          <div id="highscore-header">
+            <h3>User Initials</h3>
+            <h3>Score</h3>
+          </div>
+          <div id="highscore-initials"></div>
+          <div id="highscore-score"></div>
         </div>
+        <div id="endGameBtns">
+          <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+          <button id="clearHighscore" onclick="clearScore()">
+            Clear Highscores
+          </button>
+        </div>
+      </div>
     </div>
-    </div>
-  
+    
     <script src="/assets/script.js"></script>
   </body>
 </html>
