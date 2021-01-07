@@ -16,6 +16,8 @@ Spanish Coding Quiz
 
 This took me longer than expected and my only issue was my linking to index.html; regardless it was a fun activity. I really enjoying writing out the javascript in this file. 
 
+I am just happy that I got to implement html, css and javascript in one app. This definitely made me rely a lot on google. Without it I wouldn't have gotten much done.
+
 ## User Story
 
 ```
@@ -34,7 +36,7 @@ THEN I can save my initials and score
 
 ## Mock-Up
 
-
+![Demo](assets/demo.gif)
 
 ## Installation Instructions
 
@@ -46,4 +48,4 @@ Please Follow the installation process below:
 1. Clone the repo to your computer via git.
 1. Open the project files with the text editor of your choice.
 
-## Future Development
+## Future Development 
