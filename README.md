@@ -49,3 +49,5 @@ Please Follow the installation process below:
 1. Open the project files with the text editor of your choice.
 
 ## Future Development 
+
+In the future I plan on changing the style and updating the content. This could also help out with studying because I can recreate different quizzes. Might give that a shot. 
